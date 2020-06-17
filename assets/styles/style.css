@@ -1,0 +1,54 @@
+.my-navbar {
+    background-color:#444551;
+}
+
+.my-project .my-navbar.navbar-light a.my-navbar__link {
+    color: #fff;
+}
+
+.my-navbar li:not(:last-child) .my-navbar__link {
+    border-right: 2px solid #3f4048;
+}
+
+.my-navbar__dropdown .my-navbar__dropdown-menu {
+    top: calc(100% + .5rem);
+    margin-top: 0;
+    border: none;
+    background-color: #1f2024;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 0;
+}
+
+.my-project .my-navbar__dropdown-menu a.my-navbar__dropdown-menu-link {
+    color: #fff;
+}
+
+.my-navbar__dropdown-menu a:not(:last-child) {
+    border-bottom: 2px solid #3f4048;
+}
+
+.my-project .my-navbar.navbar-light a.my-navbar__link:hover,
+.my-project .my-navbar.navbar-light a.my-navbar__link:focus,
+.my-project .my-navbar.navbar-light a.my-navbar__link:active,
+.my-project .my-navbar.navbar-light .my-navbar__dropdown-menu a:hover,
+.my-project .my-navbar.navbar-light .my-navbar__dropdown-menu a:focus,
+.my-project .my-navbar.navbar-light .my-navbar__dropdown-menu a:active {
+    color: #71c63e;
+}
+
+.my-project .my-navbar .my-navbar__dropdown-menu a:hover,
+.my-project .my-navbar .my-navbar__dropdown-menu a:focus,
+.my-project .my-navbar .my-navbar__dropdown-menu a:active {
+    background-color: unset;
+}
+
+@media (max-width: 991px) {
+    .my-navbar li:not(:last-child) .my-navbar__link {
+        border-right:  none;
+    }
+
+    .my-project .my-navbar {
+        padding: 0;
+    }
+}
